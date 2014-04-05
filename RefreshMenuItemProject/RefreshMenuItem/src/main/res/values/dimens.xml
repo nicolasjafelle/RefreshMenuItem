@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="refresh_menu_item_size">56dp</dimen>
+	<dimen name="refresh_menu_item_progress_indeterminate_size">32dp</dimen>
+</resources>

@@ -1,0 +1,35 @@
+apply plugin: 'android-library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+group 'com.refresh.menuitem'
+archivesBaseName = 'refreshmenuitem'
+version '1.0'
+
+
+ext.home = "file://" + System.getProperty("user.home") + "/.m2/repository"
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: home)
+        }
+    }
+}

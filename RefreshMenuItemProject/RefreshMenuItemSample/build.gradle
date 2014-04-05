@@ -1,0 +1,49 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias = "refreshmenuitem"
+        }
+    }
+
+    buildTypes {
+        release {
+            zipAlign true
+            debuggable = false
+            signingConfig signingConfigs.release
+//            runProguard false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+
+        debug {
+            debuggable = true
+            packageNameSuffix = ".debug"
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+if (project.hasProperty('storeFile') &&
+        project.hasProperty('storePassword') &&
+        project.hasProperty('keyPassword')) {
+
+    android.signingConfigs.release.storeFile = file(storeFile)
+    android.signingConfigs.release.storePassword = storePassword
+    android.signingConfigs.release.keyPassword = keyPassword
+
+}
+
+dependencies {
+    compile project(':RefreshMenuItem')
+}

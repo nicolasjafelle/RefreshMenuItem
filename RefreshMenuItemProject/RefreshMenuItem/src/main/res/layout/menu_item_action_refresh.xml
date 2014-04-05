@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="@dimen/refresh_menu_item_size"
+	android:layout_height="wrap_content"
+	android:minWidth="@dimen/refresh_menu_item_size">
+	<ProgressBar
+		android:layout_width="@dimen/refresh_menu_item_progress_indeterminate_size"
+		android:layout_height="@dimen/refresh_menu_item_progress_indeterminate_size"
+		android:layout_gravity="center"/>
+</FrameLayout>
