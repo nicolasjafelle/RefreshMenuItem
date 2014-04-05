@@ -34,6 +34,7 @@ Overrides the onCreateOptionsMenu(Menu menu) method and use the RefreshMenuItemH
 ``` java 
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
+	// True to use Holo Dark, false for Holo Light
 	return refreshHelper.onCreateOptionsMenu(getMenuInflater(), menu, true);
 }
 ```
@@ -54,18 +55,14 @@ public boolean onOptionsItemSelected(MenuItem item) {
 ```
 
 Then simple call:
-``` java 
-@Override
+``` java
 refreshHelper.startLoading();
 ```
 
 And:
-``` java 
-@Override
+``` java
 refreshHelper.stopLoading();
 ```
-
-See <a href="https://github.com/nicolasjafelle/Qachee/tree/master/QacheeProject/QacheeSample">Demo Sample</a>
 
 Check the sample <a href="https://github.com/nicolasjafelle/RefreshMenuItem/tree/master/RefreshMenuItemProject/RefreshMenuItemSample">Demo Sample</a>
 
