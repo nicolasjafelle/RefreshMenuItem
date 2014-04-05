@@ -1,4 +1,5 @@
-======
+RefreshMenuItem
+===========
 RefreshMenuItem is a Menu item that shows an indeterminate progress in the Android ActionBar. It is simple to use, lightweight, scalable and uses intuitive methods names.<br>
 
 Instructions 1
