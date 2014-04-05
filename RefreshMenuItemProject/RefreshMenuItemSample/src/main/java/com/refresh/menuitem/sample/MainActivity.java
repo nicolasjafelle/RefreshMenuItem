@@ -38,8 +38,8 @@ public class MainActivity extends Activity {
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 		    case R.id.action_refresh:
 			    refreshHelper.setMenuItem(item);
@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 		    default:
 			    return super.onOptionsItemSelected(item);
 	    }
-    }
+	}
 
     /**
      * A placeholder fragment containing a simple view.

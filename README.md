@@ -2,6 +2,10 @@ RefreshMenuItem
 ===========
 RefreshMenuItem is a Menu item that shows an indeterminate progress in the Android ActionBar. It is simple to use, lightweight, scalable and uses intuitive methods names.<br>
 
+![screenshot_one](https://raw2.github.com/nicolasjafelle/RefreshMenuItem/master/screenshot_one.png)
+<br>
+![screenshot_two](https://raw2.github.com/nicolasjafelle/RefreshMenuItem/master/screenshot_two.png)
+
 Instructions 1
 ============
 
@@ -21,8 +25,49 @@ Instructions 2
 How to Use it
 ================
 
-In progress..
+Simple in your Activity or Fragment's onCreate() method instantiate it:
+``` java 
+refreshHelper = new RefreshMenuItemHelper();
+```
 
+Overrides the onCreateOptionsMenu(Menu menu) method and use the RefreshMenuItemHelper:
+``` java 
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+	return refreshHelper.onCreateOptionsMenu(getMenuInflater(), menu, true);
+}
+```
+
+In the onOptionsItemSelected(MenuItem item) sets the MenuItem which will work as a "Loading" item:
+``` java 
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+	    case R.id.action_refresh:
+		    refreshHelper.setMenuItem(item);
+		    new RefreshAsyncTask().execute();
+		    return true;
+	    default:
+		    return super.onOptionsItemSelected(item);
+    }
+}
+```
+
+Then simple call:
+``` java 
+@Override
+refreshHelper.startLoading();
+```
+
+And:
+``` java 
+@Override
+refreshHelper.stopLoading();
+```
+
+See <a href="https://github.com/nicolasjafelle/Qachee/tree/master/QacheeProject/QacheeSample">Demo Sample</a>
+
+Check the sample <a href="https://github.com/nicolasjafelle/RefreshMenuItem/tree/master/RefreshMenuItemProject/RefreshMenuItemSample">Demo Sample</a>
 
 Developed By
 ================
