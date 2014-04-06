@@ -69,7 +69,7 @@ Check the sample <a href="https://github.com/nicolasjafelle/RefreshMenuItem/tree
 Important Tip
 ================
 
-If you need more items in your ActioBar like: refresh, help, about us, settings simple extends RefreshMenuItem class and overrides onCreateOptionsMenu(MenuInflater menuInflater, Menu menu, boolean useHoloDark):
+If you need more items in your ActionBar like: refresh, help, about us, settings simple extends RefreshMenuItem class and overrides onCreateOptionsMenu(MenuInflater menuInflater, Menu menu, boolean useHoloDark):
 ``` java
 public class MyRefreshMenuItem extends RefreshMenuItemHelper {
 
