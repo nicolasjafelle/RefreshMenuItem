@@ -66,6 +66,22 @@ refreshHelper.stopLoading();
 
 Check the sample <a href="https://github.com/nicolasjafelle/RefreshMenuItem/tree/master/RefreshMenuItemProject/RefreshMenuItemSample">Demo Sample</a>
 
+Important Tip
+================
+
+If you need more items in your ActioBar like: refresh, help, about us, settings simple extends RefreshMenuItem class and overrides onCreateOptionsMenu(MenuInflater menuInflater, Menu menu, boolean useHoloDark):
+``` java
+public class MyRefreshMenuItem extends RefreshMenuItemHelper {
+
+	@Override
+	public boolean onCreateOptionsMenu(MenuInflater menuInflater, Menu menu, boolean useHoloDark) {
+		menuInflater.inflate(R.menu.full_menu, menu);
+		return true;
+	}
+}
+```
+
+
 Developed By
 ================
 
