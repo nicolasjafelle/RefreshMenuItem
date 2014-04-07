@@ -19,7 +19,8 @@ Instructions 2 - MAVEN CENTRAL
 
 add this library in your build.gradle:
 ``` java 
-compile 'com.github.nicolasjafelle:refreshmenuitem:1.0'
+dependencies {
+    compile 'com.github.nicolasjafelle:refreshmenuitem:1.0'
 }
 ```
 
