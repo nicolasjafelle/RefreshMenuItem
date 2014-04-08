@@ -14,7 +14,18 @@ Instructions 1
 3. Add "RefreshMenuItem" module in your settings.gradle
 4. DONE
 
-Instructions 2 
+Instructions 2 - MAVEN CENTRAL
+============
+
+1. Add this library in your build.gradle:
+``` java 
+dependencies {
+    compile 'com.github.nicolasjafelle:refreshmenuitem:1.0'
+}
+```
+
+
+Instructions 3 
 ============
 
 1. Add Nicolas Jafelle's Maven repo to your build.gradle: <a href="https://github.com/nicolasjafelle/maven-repo">Instructions</a>
