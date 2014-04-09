@@ -6,6 +6,16 @@ RefreshMenuItem is a Menu item that shows an indeterminate progress in the Andro
 <br>
 ![screenshot_two](https://raw2.github.com/nicolasjafelle/RefreshMenuItem/master/screenshot_two.png)
 
+Instructions - Maven Central
+============
+
+1. Add this library in your build.gradle:
+``` 
+dependencies {
+    compile 'com.github.nicolasjafelle:refreshmenuitem:1.0'
+}
+```
+
 Instructions 1
 ============
 
@@ -14,18 +24,7 @@ Instructions 1
 3. Add "RefreshMenuItem" module in your settings.gradle
 4. DONE
 
-Instructions 2 - MAVEN CENTRAL
-============
-
-1. Add this library in your build.gradle:
-``` java 
-dependencies {
-    compile 'com.github.nicolasjafelle:refreshmenuitem:1.0'
-}
-```
-
-
-Instructions 3 
+Instructions 2 
 ============
 
 1. Add Nicolas Jafelle's Maven repo to your build.gradle: <a href="https://github.com/nicolasjafelle/maven-repo">Instructions</a>
