@@ -10,7 +10,7 @@ Instructions - Maven Central
 ============
 
 1. Add this library in your build.gradle:
-``` 
+``` groovy
 dependencies {
     compile 'com.github.nicolasjafelle:refreshmenuitem:1.0'
 }
