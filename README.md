@@ -2,9 +2,9 @@ RefreshMenuItem
 ===========
 RefreshMenuItem is a Menu item that shows an indeterminate progress in the Android ActionBar. It is simple to use, lightweight, scalable and uses intuitive methods names.<br>
 
-![screenshot_one](https://raw2.github.com/nicolasjafelle/RefreshMenuItem/master/screenshot_one.png)
+![screenshot_one](https://raw.githubusercontent.com/nicolasjafelle/RefreshMenuItem/master/screenshot_one.png)
 <br>
-![screenshot_two](https://raw2.github.com/nicolasjafelle/RefreshMenuItem/master/screenshot_two.png)
+![screenshot_two](https://raw.githubusercontent.com/nicolasjafelle/RefreshMenuItem/master/screenshot_two.png)
 
 Instructions - Maven Central
 ============
