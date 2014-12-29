@@ -1,5 +1,8 @@
 RefreshMenuItem
 ===========
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RefreshMenuItem-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1277)
+
 RefreshMenuItem is a Menu item that shows an indeterminate progress in the Android ActionBar. It is simple to use, lightweight, scalable and uses intuitive methods names.<br>
 
 ![screenshot_one](https://raw.githubusercontent.com/nicolasjafelle/RefreshMenuItem/master/screenshot_one.png)
