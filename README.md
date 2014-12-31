@@ -82,7 +82,7 @@ Check the sample <a href="https://github.com/nicolasjafelle/RefreshMenuItem/tree
 Important Tip
 ================
 
-If you need more items in your ActionBar like: refresh, help, about us, settings simple extends RefreshMenuItem class and overrides onCreateOptionsMenu(MenuInflater menuInflater, Menu menu, boolean useHoloDark):
+If you need more items in your ActionBar like: refresh, help, about us, settings simply extend RefreshMenuItem class and override onCreateOptionsMenu(MenuInflater menuInflater, Menu menu, boolean useHoloDark):
 ``` java
 public class MyRefreshMenuItem extends RefreshMenuItemHelper {
 
@@ -92,6 +92,22 @@ public class MyRefreshMenuItem extends RefreshMenuItemHelper {
 		return true;
 	}
 }
+```
+
+Also, make sure that your custom menu includes a refresh menu item. For example:
+
+```
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fluc.driver.ui.activities.HomeActivity" >
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/refresh"/>
+    <!-- Your other menu items -->
+</menu>
 ```
 
 
